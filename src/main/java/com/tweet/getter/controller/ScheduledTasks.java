@@ -58,8 +58,8 @@ public class ScheduledTasks {
         ref = defaultDatabase.getReference("tweets");
     }
 
-    @Scheduled(fixedRate = 60000)
-    public void reportCurrentTime() throws IOException {
+    @Scheduled(fixedRate = 10000)
+    public void sendTweet() throws IOException {
 
         List<Tweet> result = tweet.searchTweet(hastag).getResult();
 
