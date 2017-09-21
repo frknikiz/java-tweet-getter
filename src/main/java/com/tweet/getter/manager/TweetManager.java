@@ -87,7 +87,7 @@ public class TweetManager {
 
                 for (Element tweet : tweets) {
                     String fullName = tweet.select("strong.fullname").text();
-                    String usernameTweet = tweet.select("span.username").text();
+                    String usernameTweet = tweet.select(".js-action-profile span.username").text();
                     Elements links = tweet.select("p.js-tweet-text>a.twitter-timeline-link");
                     links.stream().forEach(e -> e.replaceWith(doc.createElement("span").text(" " + e.text() + " ")));
                     String txt = tweet.select("p.js-tweet-text").text();
