@@ -19,6 +19,6 @@ You can parse a hashtag's sent tweets and write to firebase database.
 #### Run
     java -jar target/java-tweet-getter-*.jar
 
-##Credit
+### Credit
 
 [https://github.com/Jefferson-Henrique/GetOldTweets-java](https://github.com/Jefferson-Henrique/GetOldTweets-java)
